@@ -21,7 +21,6 @@ class TaskController extends Controller
         return view('pages.home', $data);
     }
 
-    //store() → Menyimpan tugas baru ke database.
     public function store(Request $request)
     {
         $request->validate([
@@ -38,7 +37,6 @@ class TaskController extends Controller
         return redirect()->back();
     }
 
-    //complete() → Menandai tugas sebagai selesai (is_completed = true).
     public function complete($id)
     {
         Task::findOrFail($id)->update([
@@ -48,11 +46,22 @@ class TaskController extends Controller
         return redirect()->back();
     }
 
-    //destroy() → Menghapus tugas berdasarkan ID.
     public function destroy($id)
     {
         Task::findOrFail($id)->delete();
 
         return redirect()->back();
+    }
+
+    public function show($id)
+    {
+        $task = Task::findOrFail($id);
+
+        $data = [
+            'title' => 'Details',
+            'task' => $task,
+        ];
+
+        return view('pages.details', $data);
     }
 }

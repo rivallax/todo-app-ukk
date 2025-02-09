@@ -1,4 +1,4 @@
-@extends('layouts.app')
+{{-- @extends('layouts.app')
 
 @section('content')
     <div id="content" class="overflow-y-hidden overflow-x-hidden">
@@ -95,4 +95,36 @@
             </button>
         </div>
     </div>
+@endsection --}}
+
+@extends('layouts.app')
+
+@section('content')
+    <div id="content" class="overflow-y-hidden overflow-x-hidden">
+        @if ($lists->count() == 0)
+            <div class="d-flex flex-column align-items-center">
+                <p class="fw-bold text-center">Belum ada tugas yang ditambahkan</p>
+                <button type="button" class="btn btn-sm d-flex align-items-center gap-2 btn-outline-primary"
+                    style="width: fit-content;">
+                    <i class="bi bi-plus-square fs-3"></i> Tambah
+                </button>
+            </div>
+        @endif
+
+        <div class="d-flex gap-3 px-3 flex-nowrap overflow-x-scroll overflow-y-hidden" style="height: 100vh;">
+            @foreach ($lists as $list)
+                @include('partials.list-card', ['list' => $list, 'tasks' => $tasks]) <!-- Panggil Partial List -->
+            @endforeach
+
+            <button type="button" class="btn btn-outline-primary flex-shrink-0" style="width: 18rem; height: fit-content;"
+                data-bs-toggle="modal" data-bs-target="#addListModal">
+                <span class="d-flex align-items-center justify-content-center">
+                    <i class="bi bi-plus fs-5"></i>
+                    Tambah
+                </span>
+            </button>
+        </div>
+    </div>
+
+    @include('partials.modal') <!-- Panggil Modal -->
 @endsection
