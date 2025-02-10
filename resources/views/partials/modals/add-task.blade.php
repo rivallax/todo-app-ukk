@@ -1,3 +1,4 @@
+
 <div class="modal fade" id="addTaskModal" tabindex="-1" aria-labelledby="addTaskModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <form action="{{ route('tasks.store') }}" method="POST" class="modal-content">
