@@ -11,4 +11,3 @@ Route::resource('lists', TaskListController::class);
 
 Route::resource('tasks', TaskController::class);
 Route::patch('/tasks/{task}/complete', [TaskController::class, 'complete'])->name('tasks.complete');
-Route::post('/tasks', [TaskController::class, 'store'])->name('tasks.store');
