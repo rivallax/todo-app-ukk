@@ -11,6 +11,8 @@
     @yield('content') <!-- Render content -->
 
     @include('partials.scripts') <!-- Panggil scripts -->
+
+    @include('partials.navbar') <!-- Panggil footer -->
 </body>
 
 </html>
