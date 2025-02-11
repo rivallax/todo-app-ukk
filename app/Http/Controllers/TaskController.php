@@ -74,4 +74,31 @@ class TaskController extends Controller
 
         return view('pages.all-task', $data);
     }
+    public function low()
+    {
+        $data = [
+            'title' => 'All Tasks',
+            'tasks' => Task::orderBy('created_at', 'desc')->get()
+        ];
+
+        return view('pages.all-task', $data);
+    }
+    public function medium()
+    {
+        $data = [
+            'title' => 'All Tasks',
+            'tasks' => Task::orderBy('created_at', 'desc')->get()
+        ];
+
+        return view('pages.all-task', $data);
+    }
+    public function high()
+    {
+        $data = [
+            'title' => 'All Tasks',
+            'tasks' => Task::orderBy('created_at', 'desc')->get()
+        ];
+
+        return view('pages.all-task', $data);
+    }
 }
