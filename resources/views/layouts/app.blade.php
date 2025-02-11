@@ -106,7 +106,7 @@
                 <!-- main-content-body -->
                 <div class="main-content-body">
                     @yield('home')
-                    {{-- @yield('bebas') --}}
+
                     <!-- //main-content-body -->
 
                 </div>
