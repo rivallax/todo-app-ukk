@@ -10,34 +10,6 @@
          </nav>
      </div>
      <div class="d-flex my-auto">
-         <div class=" d-flex right-page">
-             <div class="d-flex justify-content-center me-5">
-                 <div class="">
-                     <span class="d-block">
-                         <span class="label ">EXPENSES</span>
-                     </span>
-                     <span class="value">
-                         $53,000
-                     </span>
-                 </div>
-                 <div class="ms-3 mt-2">
-                     <span class="sparkline_bar"></span>
-                 </div>
-             </div>
-             <div class="d-flex justify-content-center">
-                 <div class="">
-                     <span class="d-block">
-                         <span class="label">PROFIT</span>
-                     </span>
-                     <span class="value">
-                         $34,000
-                     </span>
-                 </div>
-                 <div class="ms-3 mt-2">
-                     <span class="sparkline_bar31"></span>
-                 </div>
-             </div>
-         </div>
      </div>
  </div>
  <!-- /breadcrumb -->

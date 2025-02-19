@@ -12,13 +12,13 @@
 :root {
     --dark-theme: #2b3054;
     --dark-body: #3d425d;
-    --primary-bg-color: #3858f9;
-    --primary-bg-hover: #3d4bb7;
-    --primary-bg-border: #3d4bb7;
+    --primary-bg-color:rgb(26, 183, 180);
+    --primary-bg-hover:rgb(34, 245, 48);
+    --primary-bg-border:rgb(70, 195, 56);
     --blue: $primary;
     --indigo: $primary;
     --purple: #6f42c1;
-    --pink: $pink;
+    --pink: $purple;
     --red: $danger;
     --orange: $orange;
     --yellow: #ffc107;
@@ -34,7 +34,7 @@
     --info: $info;
     --warning: #ffc107;
     --danger: $danger;
-    --light: #f8f7ff;
+    --light: blue;
     --dark: $gray-800;
     --breakpoint-xs: 0;
     --breakpoint-sm: 576px;
