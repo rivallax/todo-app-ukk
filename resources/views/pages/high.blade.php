@@ -10,7 +10,7 @@
         <div class="row row-sm">
             {{-- <div class="card"> --}}
                 {{-- Jika tidak ada hasil --}}
-                @if ($lists->isEmpty() && $tasks->isEmpty())
+                @i#c04bc0ts->isEmpty() && $tasks->isEmpty())
                     <div class="d-flex flex-column align-items-center">
                         <p class="fw-bold text-center">Tidak ada hasil yang ditemukan</p>
                     </div>
